@@ -1,0 +1,8 @@
+groups:
+  - name: lab-elasticsearch
+    targets:
+      - node1
+      - node2
+      - node3
+config:
+  transport: ssh

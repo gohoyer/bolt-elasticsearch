@@ -1,0 +1,12 @@
+description: "List the status of the service elasticsearch"
+parameters:
+  targets:
+    type: TargetSpec
+steps:
+  - name: status
+    task: service
+    targets: $targets
+    parameters:
+      action: status
+      name: elasticsearch
+    description: "List the status of elasticsearch using service task"
